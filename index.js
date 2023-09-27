@@ -155,7 +155,9 @@ const startGame = (userPicked) => {
   userScore.innerHTML = score.user;
   computerScore.innerHTML = score.computer;
 
-  localStorage.setItem("score", JSON.stringify(score));
+  // localStorage.setItem("score", JSON.stringify(score));
+  localStorage.score = JSON.stringify(score);
+
 };
 
 
